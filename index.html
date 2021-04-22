@@ -336,10 +336,10 @@
 }
  
 @media screen and (max-width: 720px) {
-  .star-wars-intro .main-content {
-    font-size: 35px;
+  #star-wars-intro .main-content {
+    font-size: 18px;
   }
-  .star-wars-intro .title-content {
+  #star-wars-intro .title-content {
     position: absolute;
     top: 100%;
     animation: scroll 100s linear 4s forwards;
@@ -408,7 +408,7 @@
       <br>
  
       <p class="content-body">
-       As the world grew into dissarray with the consistant house arrest imposed upon us during the COVID 19 Pandemic.  A place where instead of rewarding our health service workers with a salary worth putting their lives on the line for, we gave them a bloody good clap..
+       As the world grew into dissarray with the consistant house arrest imposed upon us during the COVID 19 Pandemic.  A place where instead of rewarding our health service workers with a salary worth putting their lives on the line for, we gave them a bloody good clap..<br>
  People seperated into two factions.  One with extremely clean ringpieces and one with massive skiddies in their undercrackers.
       </p>
 
@@ -426,8 +426,8 @@
       <br>      <br>
       <br>      <br>
       <br>
-      <p class='content-body'>
-        Its probably shit.
+      <p class='content-header'>
+        It's probably shit.
       </p>
  
       <br>
@@ -443,7 +443,7 @@
 
 
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="display: none;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -512,7 +512,7 @@
 
 <script>
 $(document).ready(function(){
-
+  var scrollTime = setInterval(myTimer, 60000);
   // document.getElementById("my_audio").play();
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
@@ -540,6 +540,15 @@ $(document).ready(function(){
       });
     } // End if
   });
+  
+
+function myTimer() {
+  //$("#star-wars-intro").fadeOut(5000);
+  $("#star-wars-intro").animate({height: '0px', opacity: '0.1'},5000);
+  $("#myCarousel").fadeIn(5000);
+}
+
+
 })
 </script>
 

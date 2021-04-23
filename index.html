@@ -335,14 +335,25 @@
   100% { top: -170%; }
 }
  
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   #star-wars-intro .main-content {
-    font-size: 18px;
+    font-size: 3.2vw;
   }
   #star-wars-intro .title-content {
     position: absolute;
     top: 100%;
-    animation: scroll 100s linear 4s forwards;
+    animation: scroll 200s linear 5s forwards;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #star-wars-intro .main-content {
+    font-size: 3.2vw;
+  }
+  #star-wars-intro .title-content {
+    position: absolute;
+    top: 100%;
+    animation: scroll 100s linear 6s forwards;
   }
 }
 
@@ -403,13 +414,13 @@
   <div class="main-content">
  
     <div class="title-content">
-      <p class="content-header">OF THE WEEK</p>
+      <p class="content-header" >OF THE WEEK</p>
  
       <br>
  
       <p class="content-body">
-       As the world grew into dissarray with the consistant house arrest imposed upon us during the COVID 19 Pandemic.  A place where instead of rewarding our health service workers with a salary worth putting their lives on the line for, we gave them a bloody good clap..<br>
- People seperated into two factions.  One with extremely clean ringpieces and one with massive skiddies in their undercrackers.
+       As the world grew into dissarray with the consistant house arrest imposed upon us during the COVID 19 Pandemic.  A place where instead of rewarding our health service workers with a salary worth putting their lives on the line, we gave them a bloody good clap..<br>
+ During the Great Bog Roll Shortage, people seperated into two factions.  One with extremely clean ringpieces and one with massive skiddies in their undercrackers.
       </p>
 
       <br>
@@ -423,11 +434,43 @@
         With a proven robust scoring system, these men will rate stuff to the highest of standards.  Never forgetting that if it doesn't come with WIFI.....  
       </p>
       <br>
-      <br>      <br>
-      <br>      <br>
+
       <br>
       <p class='content-header'>
         It's probably shit.
+      </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="content-body">
+        Still here?? You must be watching on some type of mobile device that we cant be bothered coding for... Dont worry... Wont be long now. 
       </p>
  
       <br>
@@ -512,8 +555,8 @@
 
 <script>
 $(document).ready(function(){
-  var scrollTime = setInterval(myTimer, 60000);
-  // document.getElementById("my_audio").play();
+  var scrollTime = setInterval(myTimer, 53000);
+
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
   

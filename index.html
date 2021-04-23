@@ -334,7 +334,16 @@
   0% { top: 100%; }
   100% { top: -170%; }
 }
- 
+@media screen and (max-width: 1200px) {
+  #star-wars-intro .main-content {
+    font-size: 20px;
+  }
+  #star-wars-intro .title-content {
+    position: absolute;
+    top: 100%;
+    animation: scroll 100s linear 5s forwards;
+  }
+}
 @media screen and (max-width: 960px) {
   #star-wars-intro .main-content {
     font-size: 20px;
